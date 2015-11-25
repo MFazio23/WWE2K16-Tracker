@@ -1,0 +1,50 @@
+body {
+    padding: 10px;
+    max-width: 987px;
+    margin: 0 auto;
+}
+
+#date-group {
+    padding: 5px;
+}
+
+.panel-contents {
+    padding: 5px;
+}
+
+.match-input {
+    width: 100%;
+}
+
+.form-control {
+    width: 250px;
+}
+
+.wrestler-input-group {
+    display: inline-block;
+    padding: 10px;
+}
+
+.setting-group {
+    margin: 0 auto;
+}
+
+.error-field {
+    display: none;
+    color: red;
+}
+
+/* Selectize.js overrides */
+.selectize-dropdown, .selectize-input, .selectize-input {
+    line-height: 14px;
+    width: 250px;
+}
+
+/* General classes */
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "WWE2K16-Tracker",
+  "authors": [
+    "Michael Fazio <mfazio23@gmail.com>"
+  ],
+  "description": "WWE 2K16 Universe Tracker",
+  "main": "server.js",
+  "moduleType": [],
+  "keywords": [
+    "wwe"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "firebase": "~2.3.2",
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "selectize": "~0.12.1",
+    "moment": "~2.10.6"
+  },
+  "resolutions": {
+    "bootstrap": "~3.3.5"
+  }
+}

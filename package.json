@@ -1,0 +1,21 @@
+{
+  "name": "wwe2k16-tracker",
+  "version": "1.0.0",
+  "description": "WWE 2K16 Universe Tracker",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "finalhandler": "^0.4.0",
+    "serve-static": "^1.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "WWE2K16"
+  ],
+  "author": "Michael Fazio <mfazio23@gmail.com>",
+  "license": "MIT"
+}

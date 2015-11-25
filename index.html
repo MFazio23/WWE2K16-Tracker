@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>WWE 2K16 Tracker</title>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="bower_components/selectize/dist/css/selectize.bootstrap3.css"/>
+    <link rel="stylesheet" href="css/wwe2k16-tracker.css"/>
+
+    <script src="js/wwe2k16-tracker-config.js"></script>
+
+</head>
+<body>
+<div class="page-header">
+<!--
+    <h1>WWE 2K16 - Universe Tracker</h1>
+-->
+</div>
+
+<div id="setting-input" class="panel panel-default">
+    <div class="panel-heading">Setting</div>
+    <div id="date-group" class="form-inline">
+        <label for="date-month" class="control-label">Month:</label>
+        <input id="date-month" class="form-control" type="text" value="1"/>
+        <label for="date-year" class="control-label">Year:</label>
+        <input id="date-year" class="form-control" type="number" min="2014" max="2100" value="2014" />
+    </div>
+    <div id="setting-group" class="btn-group btn-group-lg setting-group panel-contents" role="group">
+        <button type="button" class="btn btn-default active">RAW</button>
+        <button type="button" class="btn btn-default">WWE Main Event</button>
+        <button type="button" class="btn btn-default">NXT</button>
+        <button type="button" class="btn btn-default">SmackDown!</button>
+        <button type="button" class="btn btn-default">WWE Classic</button>
+        <button type="button" class="btn btn-default">WWE Superstars</button>
+        <button type="button" class="btn btn-default">PPV</button>
+    </div>
+</div>
+
+<div id="match-input" class="match-input">
+    <div class="match-type-selection panel panel-default">
+        <div class="panel-heading">Match Type/Subtype</div>
+        <div id="match-type-group" class="btn-group match-type-group panel-contents" role="group">
+            <button id="1v1" type="button" class="btn btn-default match-type-button">One on One</button>
+            <button id="2v2" type="button" class="btn btn-default match-type-button">Two on Two</button>
+            <button id="triple" type="button" class="btn btn-default match-type-button">Triple Threat</button>
+            <button id="four-way" type="button" class="btn btn-default match-type-button">Fatal 4-Way</button>
+            <button id="six-man" type="button" class="btn btn-default match-type-button">6-Man</button>
+            <button id="handicap" type="button" class="btn btn-default match-type-button">Handicap</button>
+            <button id="tournament" type="button" class="btn btn-default match-type-button">Tournament</button>
+            <button id="royal-rumble" type="button" class="btn btn-default match-type-button">Royal Rumble</button>
+        </div>
+        <div id="match-subtype-group" class="btn-group match-subtype-group panel-contents" role="group"></div>
+    </div>
+
+    <div class="form-group wrestler-input-group">
+    </div>
+
+    <div class="has-error error-field">
+        There are one or more errors in the entry.  Please fix and retry!
+    </div>
+
+    <div id="buttons">
+        <button type="button" class="btn btn-default" onclick="WWE.saveData()">Save Match</button>
+    </div>
+
+    <div id="matches"></div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/selectize/dist/js/standalone/selectize.min.js"></script>
+    <script src="bower_components/moment/min/moment.min.js"></script>
+    <script src="js/wwe2k16-tracker.js"></script>
+</div>
+
+</body>
+</html>
